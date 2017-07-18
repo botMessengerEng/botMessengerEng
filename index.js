@@ -93,7 +93,7 @@ function receivedMessage(event) {
         break;
 
       default:
-        sendTextMessage(senderID, "Tak Panie");//sendTextMessage(senderID, messageText);
+        sendTextMessage(senderID, `Bot reresponse, echo: "${message}"` );//sendTextMessage(senderID, messageText);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
